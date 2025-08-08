@@ -12,6 +12,9 @@ The script loads an image and compresses it by reducing the number of colors usi
 - Compress the image by color quantization using KMeans clustering
 - Display the original and compressed images side by side
 
+## Ouput Images
+![My Diagram](images/result_5.png)
+
 ## Requirements
 
 - Python 3.x
@@ -25,5 +28,4 @@ You can install the required packages using pip:
 ```bash
 pip install opencv-python numpy scikit-learn matplotlib
 
-## Ouput Images
-![My Diagram](images/result_5.png)
+
