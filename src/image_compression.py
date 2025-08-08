@@ -22,11 +22,10 @@ class ImageCompression:
             raise FileNotFoundError(f"Image not found at path: {path}")
         return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-    def compress(self, path):
+    def compress(self, path="images\\umbrella.jpg", k=5):
         image = self.load_image(path)
         pixel_values = image.reshape((-1, 3)) 
         pixel_values = np.float32(pixel_values)
-        k = 2
         kmeans = KMeans(n_clusters=k, random_state=0)
         kmeans.fit(pixel_values)
 
@@ -45,7 +44,9 @@ class ImageCompression:
         plt.title(f"KMeans Segmented (k={k})")
         plt.imshow(segmented_image)
         plt.axis("off")
+        plt.savefig(f"images/result_{k}.png")
         plt.show()
+        
 
 image1 = ImageCompression()
-image = image1.compress("images\wedding.JPG")
+image = image1.compress()
