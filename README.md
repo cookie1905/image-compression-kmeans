@@ -4,7 +4,7 @@ This project demonstrates a simple image compression technique using KMeans clus
 
 ## Description
 
-The script loads an image and compresses it by reducing the number of colors using KMeans clustering. It segments the image colors into `k` clusters (default is 2), resulting in a simplified version of the original image with fewer colors.
+The script loads an image and compresses it by reducing the number of colors using KMeans clustering. It segments the image colors into `k` clusters (default is 5), resulting in a simplified version of the original image with fewer colors.
 
 ## Features
 
