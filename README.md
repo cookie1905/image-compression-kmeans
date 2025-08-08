@@ -24,3 +24,6 @@ You can install the required packages using pip:
 
 ```bash
 pip install opencv-python numpy scikit-learn matplotlib
+
+## Ouput Images
+![My Diagram](images/result_5.png)
